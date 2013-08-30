@@ -1,0 +1,1178 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F0B6E4417D10FFA00B92D13 /* OpenLeapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0B6E4317D10FD400B92D13 /* OpenLeapKit.framework */; };
+		2F0B6E4517D1114A00B92D13 /* OpenLeapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F0B6E4317D10FD400B92D13 /* OpenLeapKit.framework */; };
+		2F1FD0A817D0A969008F6408 /* AdaBoost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFE317D0A969008F6408 /* AdaBoost.cpp */; };
+		2F1FD0A917D0A969008F6408 /* DecisionStump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFE717D0A969008F6408 /* DecisionStump.cpp */; };
+		2F1FD0AA17D0A969008F6408 /* RadialBasisFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFE917D0A969008F6408 /* RadialBasisFunction.cpp */; };
+		2F1FD0AB17D0A969008F6408 /* WeakClassifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFEB17D0A969008F6408 /* WeakClassifier.cpp */; };
+		2F1FD0AC17D0A969008F6408 /* ANBC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFEE17D0A969008F6408 /* ANBC.cpp */; };
+		2F1FD0AD17D0A969008F6408 /* ANBC_Model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFF017D0A969008F6408 /* ANBC_Model.cpp */; };
+		2F1FD0AE17D0A969008F6408 /* BAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFF317D0A969008F6408 /* BAG.cpp */; };
+		2F1FD0AF17D0A969008F6408 /* DTW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFF617D0A969008F6408 /* DTW.cpp */; };
+		2F1FD0B017D0A969008F6408 /* GMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFF917D0A969008F6408 /* GMM.cpp */; };
+		2F1FD0B117D0A969008F6408 /* HiddenMarkovModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFFD17D0A969008F6408 /* HiddenMarkovModel.cpp */; };
+		2F1FD0B217D0A969008F6408 /* HMM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FCFFF17D0A969008F6408 /* HMM.cpp */; };
+		2F1FD0B317D0A969008F6408 /* KNN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD00217D0A969008F6408 /* KNN.cpp */; };
+		2F1FD0B417D0A969008F6408 /* LDA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD00517D0A969008F6408 /* LDA.cpp */; };
+		2F1FD0B517D0A969008F6408 /* LRC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD00917D0A969008F6408 /* LRC.cpp */; };
+		2F1FD0B617D0A969008F6408 /* MinDist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD00C17D0A969008F6408 /* MinDist.cpp */; };
+		2F1FD0B717D0A969008F6408 /* MinDistModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD00E17D0A969008F6408 /* MinDistModel.cpp */; };
+		2F1FD0B817D0A969008F6408 /* libsvm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD01217D0A969008F6408 /* libsvm.cpp */; };
+		2F1FD0B917D0A969008F6408 /* SVM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD01417D0A969008F6408 /* SVM.cpp */; };
+		2F1FD0BA17D0A969008F6408 /* GaussianMixtureModels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD01817D0A969008F6408 /* GaussianMixtureModels.cpp */; };
+		2F1FD0BB17D0A969008F6408 /* KMeans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD01B17D0A969008F6408 /* KMeans.cpp */; };
+		2F1FD0BC17D0A969008F6408 /* Gate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD01E17D0A969008F6408 /* Gate.cpp */; };
+		2F1FD0BD17D0A969008F6408 /* LabelledClassificationData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02117D0A969008F6408 /* LabelledClassificationData.cpp */; };
+		2F1FD0BE17D0A969008F6408 /* LabelledClassificationSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02317D0A969008F6408 /* LabelledClassificationSample.cpp */; };
+		2F1FD0BF17D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02517D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.cpp */; };
+		2F1FD0C017D0A969008F6408 /* LabelledRegressionData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02717D0A969008F6408 /* LabelledRegressionData.cpp */; };
+		2F1FD0C117D0A969008F6408 /* LabelledRegressionSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02917D0A969008F6408 /* LabelledRegressionSample.cpp */; };
+		2F1FD0C217D0A969008F6408 /* LabelledTimeSeriesClassificationData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02B17D0A969008F6408 /* LabelledTimeSeriesClassificationData.cpp */; };
+		2F1FD0C317D0A969008F6408 /* LabelledTimeSeriesClassificationSample.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD02D17D0A969008F6408 /* LabelledTimeSeriesClassificationSample.cpp */; };
+		2F1FD0C417D0A969008F6408 /* UnlabelledClassificationData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03017D0A969008F6408 /* UnlabelledClassificationData.cpp */; };
+		2F1FD0C517D0A969008F6408 /* FastFourierTransform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03417D0A969008F6408 /* FastFourierTransform.cpp */; };
+		2F1FD0C617D0A969008F6408 /* FFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03617D0A969008F6408 /* FFT.cpp */; };
+		2F1FD0C717D0A969008F6408 /* FFTFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03817D0A969008F6408 /* FFTFeatures.cpp */; };
+		2F1FD0C817D0A969008F6408 /* KMeansQuantizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03B17D0A969008F6408 /* KMeansQuantizer.cpp */; };
+		2F1FD0C917D0A969008F6408 /* MovementIndex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD03E17D0A969008F6408 /* MovementIndex.cpp */; };
+		2F1FD0CA17D0A969008F6408 /* MovementTrajectoryFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04117D0A969008F6408 /* MovementTrajectoryFeatures.cpp */; };
+		2F1FD0CB17D0A969008F6408 /* PrincipalComponentAnalysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04417D0A969008F6408 /* PrincipalComponentAnalysis.cpp */; };
+		2F1FD0CC17D0A969008F6408 /* PeakDetection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04617D0A969008F6408 /* PeakDetection.cpp */; };
+		2F1FD0CD17D0A969008F6408 /* TimeDomainFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04917D0A969008F6408 /* TimeDomainFeatures.cpp */; };
+		2F1FD0CE17D0A969008F6408 /* ZeroCrossingCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04C17D0A969008F6408 /* ZeroCrossingCounter.cpp */; };
+		2F1FD0CF17D0A969008F6408 /* Classifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD04F17D0A969008F6408 /* Classifier.cpp */; };
+		2F1FD0D017D0A969008F6408 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05117D0A969008F6408 /* Context.cpp */; };
+		2F1FD0D117D0A969008F6408 /* FeatureExtraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05317D0A969008F6408 /* FeatureExtraction.cpp */; };
+		2F1FD0D217D0A969008F6408 /* GestureRecognitionPipeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05517D0A969008F6408 /* GestureRecognitionPipeline.cpp */; };
+		2F1FD0D317D0A969008F6408 /* PostProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05817D0A969008F6408 /* PostProcessing.cpp */; };
+		2F1FD0D417D0A969008F6408 /* PreProcessing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05A17D0A969008F6408 /* PreProcessing.cpp */; };
+		2F1FD0D517D0A969008F6408 /* Regressifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD05C17D0A969008F6408 /* Regressifier.cpp */; };
+		2F1FD0D617D0A969008F6408 /* ClassLabelChangeFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06017D0A969008F6408 /* ClassLabelChangeFilter.cpp */; };
+		2F1FD0D717D0A969008F6408 /* ClassLabelFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06217D0A969008F6408 /* ClassLabelFilter.cpp */; };
+		2F1FD0D817D0A969008F6408 /* ClassLabelTimeoutFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06417D0A969008F6408 /* ClassLabelTimeoutFilter.cpp */; };
+		2F1FD0D917D0A969008F6408 /* DeadZone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06717D0A969008F6408 /* DeadZone.cpp */; };
+		2F1FD0DA17D0A969008F6408 /* Derivative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06917D0A969008F6408 /* Derivative.cpp */; };
+		2F1FD0DB17D0A969008F6408 /* DoubleMovingAverageFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06B17D0A969008F6408 /* DoubleMovingAverageFilter.cpp */; };
+		2F1FD0DC17D0A969008F6408 /* HighPassFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06D17D0A969008F6408 /* HighPassFilter.cpp */; };
+		2F1FD0DD17D0A969008F6408 /* LowPassFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD06F17D0A969008F6408 /* LowPassFilter.cpp */; };
+		2F1FD0DE17D0A969008F6408 /* MovingAverageFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD07117D0A969008F6408 /* MovingAverageFilter.cpp */; };
+		2F1FD0DF17D0A969008F6408 /* SavitzkyGolayFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD07317D0A969008F6408 /* SavitzkyGolayFilter.cpp */; };
+		2F1FD0E017D0A969008F6408 /* MLP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD07817D0A969008F6408 /* MLP.cpp */; };
+		2F1FD0E117D0A969008F6408 /* Neuron.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD07A17D0A969008F6408 /* Neuron.cpp */; };
+		2F1FD0E217D0A969008F6408 /* LogisticRegression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD07D17D0A969008F6408 /* LogisticRegression.cpp */; };
+		2F1FD0E317D0A969008F6408 /* Cholesky.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD08017D0A969008F6408 /* Cholesky.cpp */; };
+		2F1FD0E417D0A969008F6408 /* DebugLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD08517D0A969008F6408 /* DebugLog.cpp */; };
+		2F1FD0E517D0A969008F6408 /* EigenvalueDecomposition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD08717D0A969008F6408 /* EigenvalueDecomposition.cpp */; };
+		2F1FD0E617D0A969008F6408 /* ErrorLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD08917D0A969008F6408 /* ErrorLog.cpp */; };
+		2F1FD0E717D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD08F17D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.cpp */; };
+		2F1FD0E817D0A969008F6408 /* LUdcmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD09217D0A969008F6408 /* LUdcmp.cpp */; };
+		2F1FD0E917D0A969008F6408 /* MatrixDouble.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD09517D0A969008F6408 /* MatrixDouble.cpp */; };
+		2F1FD0EA17D0A969008F6408 /* RangeTracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD09917D0A969008F6408 /* RangeTracker.cpp */; };
+		2F1FD0EB17D0A969008F6408 /* SVD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD09B17D0A969008F6408 /* SVD.cpp */; };
+		2F1FD0EC17D0A969008F6408 /* TestingLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD09D17D0A969008F6408 /* TestingLog.cpp */; };
+		2F1FD0ED17D0A969008F6408 /* TrainingDataRecordingTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD0A017D0A969008F6408 /* TrainingDataRecordingTimer.cpp */; };
+		2F1FD0EE17D0A969008F6408 /* TrainingLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD0A217D0A969008F6408 /* TrainingLog.cpp */; };
+		2F1FD0EF17D0A969008F6408 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD0A417D0A969008F6408 /* Util.cpp */; };
+		2F1FD0F017D0A969008F6408 /* WarningLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1FD0A617D0A969008F6408 /* WarningLog.cpp */; };
+		2F1FD0F517D0B47F008F6408 /* DTWTestTrainingData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2F1FD0F417D0B47F008F6408 /* DTWTestTrainingData.txt */; };
+		2F1FD0F617D0B493008F6408 /* DTWTestTrainingData.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F1FD0F417D0B47F008F6408 /* DTWTestTrainingData.txt */; };
+		2F30E31717CF6B8200F14438 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F30E31617CF6B8200F14438 /* Cocoa.framework */; };
+		2F30E32117CF6B8200F14438 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F30E31F17CF6B8200F14438 /* InfoPlist.strings */; };
+		2F30E32317CF6B8200F14438 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F30E32217CF6B8200F14438 /* main.m */; };
+		2F30E32717CF6B8200F14438 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F30E32517CF6B8200F14438 /* Credits.rtf */; };
+		2F30E32A17CF6B8200F14438 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F30E32917CF6B8200F14438 /* AppDelegate.m */; };
+		2F30E32D17CF6B8300F14438 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F30E32B17CF6B8300F14438 /* MainMenu.xib */; };
+		2F30E33517CF6BB800F14438 /* Sample.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2F30E33417CF6BB800F14438 /* Sample.mm */; };
+		2F30E33717CF6C6300F14438 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F30E33617CF6C6300F14438 /* libLeap.dylib */; };
+		2F30E34517CF708400F14438 /* OLKDemoHandsOverlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F30E34317CF706000F14438 /* OLKDemoHandsOverlayViewController.m */; };
+		2F30E34717CF744F00F14438 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2F30E33617CF6C6300F14438 /* libLeap.dylib */; };
+		2F30E34B17CF778200F14438 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2F30E34A17CF778200F14438 /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F0B6E4217D10FD400B92D13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F0B6E3E17D10FD400B92D13 /* OpenLeapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2FEDD70817CC970600165DD2;
+			remoteInfo = OpenLeapKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F30E34617CF744700F14438 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				2F1FD0F617D0B493008F6408 /* DTWTestTrainingData.txt in CopyFiles */,
+				2F30E34717CF744F00F14438 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F30E34817CF745800F14438 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = ../Frameworks;
+			dstSubfolderSpec = 6;
+			files = (
+				2F0B6E4517D1114A00B92D13 /* OpenLeapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F0B6E3E17D10FD400B92D13 /* OpenLeapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OpenLeapKit.xcodeproj; path = "../OpenLeapKit/Objective-C/OpenLeapKit.xcodeproj"; sourceTree = "<group>"; };
+		2F1FCFE317D0A969008F6408 /* AdaBoost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AdaBoost.cpp; sourceTree = "<group>"; };
+		2F1FCFE417D0A969008F6408 /* AdaBoost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaBoost.h; sourceTree = "<group>"; };
+		2F1FCFE517D0A969008F6408 /* AdaBoostClassModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdaBoostClassModel.h; sourceTree = "<group>"; };
+		2F1FCFE717D0A969008F6408 /* DecisionStump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DecisionStump.cpp; sourceTree = "<group>"; };
+		2F1FCFE817D0A969008F6408 /* DecisionStump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecisionStump.h; sourceTree = "<group>"; };
+		2F1FCFE917D0A969008F6408 /* RadialBasisFunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RadialBasisFunction.cpp; sourceTree = "<group>"; };
+		2F1FCFEA17D0A969008F6408 /* RadialBasisFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialBasisFunction.h; sourceTree = "<group>"; };
+		2F1FCFEB17D0A969008F6408 /* WeakClassifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WeakClassifier.cpp; sourceTree = "<group>"; };
+		2F1FCFEC17D0A969008F6408 /* WeakClassifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakClassifier.h; sourceTree = "<group>"; };
+		2F1FCFEE17D0A969008F6408 /* ANBC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANBC.cpp; sourceTree = "<group>"; };
+		2F1FCFEF17D0A969008F6408 /* ANBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBC.h; sourceTree = "<group>"; };
+		2F1FCFF017D0A969008F6408 /* ANBC_Model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ANBC_Model.cpp; sourceTree = "<group>"; };
+		2F1FCFF117D0A969008F6408 /* ANBC_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBC_Model.h; sourceTree = "<group>"; };
+		2F1FCFF317D0A969008F6408 /* BAG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BAG.cpp; sourceTree = "<group>"; };
+		2F1FCFF417D0A969008F6408 /* BAG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAG.h; sourceTree = "<group>"; };
+		2F1FCFF617D0A969008F6408 /* DTW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DTW.cpp; sourceTree = "<group>"; };
+		2F1FCFF717D0A969008F6408 /* DTW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTW.h; sourceTree = "<group>"; };
+		2F1FCFF917D0A969008F6408 /* GMM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GMM.cpp; sourceTree = "<group>"; };
+		2F1FCFFA17D0A969008F6408 /* GMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMM.h; sourceTree = "<group>"; };
+		2F1FCFFB17D0A969008F6408 /* MixtureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixtureModel.h; sourceTree = "<group>"; };
+		2F1FCFFD17D0A969008F6408 /* HiddenMarkovModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HiddenMarkovModel.cpp; sourceTree = "<group>"; };
+		2F1FCFFE17D0A969008F6408 /* HiddenMarkovModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiddenMarkovModel.h; sourceTree = "<group>"; };
+		2F1FCFFF17D0A969008F6408 /* HMM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HMM.cpp; sourceTree = "<group>"; };
+		2F1FD00017D0A969008F6408 /* HMM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMM.h; sourceTree = "<group>"; };
+		2F1FD00217D0A969008F6408 /* KNN.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KNN.cpp; sourceTree = "<group>"; };
+		2F1FD00317D0A969008F6408 /* KNN.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNN.h; sourceTree = "<group>"; };
+		2F1FD00517D0A969008F6408 /* LDA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LDA.cpp; sourceTree = "<group>"; };
+		2F1FD00617D0A969008F6408 /* LDA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDA.h; sourceTree = "<group>"; };
+		2F1FD00817D0A969008F6408 /* LogisticRegressionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogisticRegressionModel.h; sourceTree = "<group>"; };
+		2F1FD00917D0A969008F6408 /* LRC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LRC.cpp; sourceTree = "<group>"; };
+		2F1FD00A17D0A969008F6408 /* LRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRC.h; sourceTree = "<group>"; };
+		2F1FD00C17D0A969008F6408 /* MinDist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinDist.cpp; sourceTree = "<group>"; };
+		2F1FD00D17D0A969008F6408 /* MinDist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinDist.h; sourceTree = "<group>"; };
+		2F1FD00E17D0A969008F6408 /* MinDistModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinDistModel.cpp; sourceTree = "<group>"; };
+		2F1FD00F17D0A969008F6408 /* MinDistModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinDistModel.h; sourceTree = "<group>"; };
+		2F1FD01217D0A969008F6408 /* libsvm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libsvm.cpp; sourceTree = "<group>"; };
+		2F1FD01317D0A969008F6408 /* libsvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libsvm.h; sourceTree = "<group>"; };
+		2F1FD01417D0A969008F6408 /* SVM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVM.cpp; sourceTree = "<group>"; };
+		2F1FD01517D0A969008F6408 /* SVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVM.h; sourceTree = "<group>"; };
+		2F1FD01817D0A969008F6408 /* GaussianMixtureModels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GaussianMixtureModels.cpp; sourceTree = "<group>"; };
+		2F1FD01917D0A969008F6408 /* GaussianMixtureModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaussianMixtureModels.h; sourceTree = "<group>"; };
+		2F1FD01B17D0A969008F6408 /* KMeans.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMeans.cpp; sourceTree = "<group>"; };
+		2F1FD01C17D0A969008F6408 /* KMeans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMeans.h; sourceTree = "<group>"; };
+		2F1FD01E17D0A969008F6408 /* Gate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Gate.cpp; sourceTree = "<group>"; };
+		2F1FD01F17D0A969008F6408 /* Gate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gate.h; sourceTree = "<group>"; };
+		2F1FD02117D0A969008F6408 /* LabelledClassificationData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledClassificationData.cpp; sourceTree = "<group>"; };
+		2F1FD02217D0A969008F6408 /* LabelledClassificationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledClassificationData.h; sourceTree = "<group>"; };
+		2F1FD02317D0A969008F6408 /* LabelledClassificationSample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledClassificationSample.cpp; sourceTree = "<group>"; };
+		2F1FD02417D0A969008F6408 /* LabelledClassificationSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledClassificationSample.h; sourceTree = "<group>"; };
+		2F1FD02517D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledContinuousTimeSeriesClassificationData.cpp; sourceTree = "<group>"; };
+		2F1FD02617D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledContinuousTimeSeriesClassificationData.h; sourceTree = "<group>"; };
+		2F1FD02717D0A969008F6408 /* LabelledRegressionData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledRegressionData.cpp; sourceTree = "<group>"; };
+		2F1FD02817D0A969008F6408 /* LabelledRegressionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledRegressionData.h; sourceTree = "<group>"; };
+		2F1FD02917D0A969008F6408 /* LabelledRegressionSample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledRegressionSample.cpp; sourceTree = "<group>"; };
+		2F1FD02A17D0A969008F6408 /* LabelledRegressionSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledRegressionSample.h; sourceTree = "<group>"; };
+		2F1FD02B17D0A969008F6408 /* LabelledTimeSeriesClassificationData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledTimeSeriesClassificationData.cpp; sourceTree = "<group>"; };
+		2F1FD02C17D0A969008F6408 /* LabelledTimeSeriesClassificationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledTimeSeriesClassificationData.h; sourceTree = "<group>"; };
+		2F1FD02D17D0A969008F6408 /* LabelledTimeSeriesClassificationSample.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledTimeSeriesClassificationSample.cpp; sourceTree = "<group>"; };
+		2F1FD02E17D0A969008F6408 /* LabelledTimeSeriesClassificationSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledTimeSeriesClassificationSample.h; sourceTree = "<group>"; };
+		2F1FD02F17D0A969008F6408 /* TimeSeriesPositionTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeSeriesPositionTracker.h; sourceTree = "<group>"; };
+		2F1FD03017D0A969008F6408 /* UnlabelledClassificationData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnlabelledClassificationData.cpp; sourceTree = "<group>"; };
+		2F1FD03117D0A969008F6408 /* UnlabelledClassificationData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnlabelledClassificationData.h; sourceTree = "<group>"; };
+		2F1FD03417D0A969008F6408 /* FastFourierTransform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastFourierTransform.cpp; sourceTree = "<group>"; };
+		2F1FD03517D0A969008F6408 /* FastFourierTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastFourierTransform.h; sourceTree = "<group>"; };
+		2F1FD03617D0A969008F6408 /* FFT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFT.cpp; sourceTree = "<group>"; };
+		2F1FD03717D0A969008F6408 /* FFT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFT.h; sourceTree = "<group>"; };
+		2F1FD03817D0A969008F6408 /* FFTFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FFTFeatures.cpp; sourceTree = "<group>"; };
+		2F1FD03917D0A969008F6408 /* FFTFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFTFeatures.h; sourceTree = "<group>"; };
+		2F1FD03B17D0A969008F6408 /* KMeansQuantizer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMeansQuantizer.cpp; sourceTree = "<group>"; };
+		2F1FD03C17D0A969008F6408 /* KMeansQuantizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMeansQuantizer.h; sourceTree = "<group>"; };
+		2F1FD03E17D0A969008F6408 /* MovementIndex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovementIndex.cpp; sourceTree = "<group>"; };
+		2F1FD03F17D0A969008F6408 /* MovementIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementIndex.h; sourceTree = "<group>"; };
+		2F1FD04117D0A969008F6408 /* MovementTrajectoryFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovementTrajectoryFeatures.cpp; sourceTree = "<group>"; };
+		2F1FD04217D0A969008F6408 /* MovementTrajectoryFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovementTrajectoryFeatures.h; sourceTree = "<group>"; };
+		2F1FD04417D0A969008F6408 /* PrincipalComponentAnalysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrincipalComponentAnalysis.cpp; sourceTree = "<group>"; };
+		2F1FD04517D0A969008F6408 /* PrincipalComponentAnalysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrincipalComponentAnalysis.h; sourceTree = "<group>"; };
+		2F1FD04617D0A969008F6408 /* PeakDetection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeakDetection.cpp; sourceTree = "<group>"; };
+		2F1FD04717D0A969008F6408 /* PeakDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeakDetection.h; sourceTree = "<group>"; };
+		2F1FD04917D0A969008F6408 /* TimeDomainFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeDomainFeatures.cpp; sourceTree = "<group>"; };
+		2F1FD04A17D0A969008F6408 /* TimeDomainFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeDomainFeatures.h; sourceTree = "<group>"; };
+		2F1FD04C17D0A969008F6408 /* ZeroCrossingCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZeroCrossingCounter.cpp; sourceTree = "<group>"; };
+		2F1FD04D17D0A969008F6408 /* ZeroCrossingCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroCrossingCounter.h; sourceTree = "<group>"; };
+		2F1FD04F17D0A969008F6408 /* Classifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Classifier.cpp; sourceTree = "<group>"; };
+		2F1FD05017D0A969008F6408 /* Classifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Classifier.h; sourceTree = "<group>"; };
+		2F1FD05117D0A969008F6408 /* Context.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Context.cpp; sourceTree = "<group>"; };
+		2F1FD05217D0A969008F6408 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		2F1FD05317D0A969008F6408 /* FeatureExtraction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FeatureExtraction.cpp; sourceTree = "<group>"; };
+		2F1FD05417D0A969008F6408 /* FeatureExtraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExtraction.h; sourceTree = "<group>"; };
+		2F1FD05517D0A969008F6408 /* GestureRecognitionPipeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GestureRecognitionPipeline.cpp; sourceTree = "<group>"; };
+		2F1FD05617D0A969008F6408 /* GestureRecognitionPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecognitionPipeline.h; sourceTree = "<group>"; };
+		2F1FD05717D0A969008F6408 /* MLBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLBase.h; sourceTree = "<group>"; };
+		2F1FD05817D0A969008F6408 /* PostProcessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostProcessing.cpp; sourceTree = "<group>"; };
+		2F1FD05917D0A969008F6408 /* PostProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostProcessing.h; sourceTree = "<group>"; };
+		2F1FD05A17D0A969008F6408 /* PreProcessing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PreProcessing.cpp; sourceTree = "<group>"; };
+		2F1FD05B17D0A969008F6408 /* PreProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreProcessing.h; sourceTree = "<group>"; };
+		2F1FD05C17D0A969008F6408 /* Regressifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Regressifier.cpp; sourceTree = "<group>"; };
+		2F1FD05D17D0A969008F6408 /* Regressifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regressifier.h; sourceTree = "<group>"; };
+		2F1FD05E17D0A969008F6408 /* GRT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRT.h; sourceTree = "<group>"; };
+		2F1FD06017D0A969008F6408 /* ClassLabelChangeFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClassLabelChangeFilter.cpp; sourceTree = "<group>"; };
+		2F1FD06117D0A969008F6408 /* ClassLabelChangeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassLabelChangeFilter.h; sourceTree = "<group>"; };
+		2F1FD06217D0A969008F6408 /* ClassLabelFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClassLabelFilter.cpp; sourceTree = "<group>"; };
+		2F1FD06317D0A969008F6408 /* ClassLabelFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassLabelFilter.h; sourceTree = "<group>"; };
+		2F1FD06417D0A969008F6408 /* ClassLabelTimeoutFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClassLabelTimeoutFilter.cpp; sourceTree = "<group>"; };
+		2F1FD06517D0A969008F6408 /* ClassLabelTimeoutFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassLabelTimeoutFilter.h; sourceTree = "<group>"; };
+		2F1FD06717D0A969008F6408 /* DeadZone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DeadZone.cpp; sourceTree = "<group>"; };
+		2F1FD06817D0A969008F6408 /* DeadZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeadZone.h; sourceTree = "<group>"; };
+		2F1FD06917D0A969008F6408 /* Derivative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Derivative.cpp; sourceTree = "<group>"; };
+		2F1FD06A17D0A969008F6408 /* Derivative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Derivative.h; sourceTree = "<group>"; };
+		2F1FD06B17D0A969008F6408 /* DoubleMovingAverageFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoubleMovingAverageFilter.cpp; sourceTree = "<group>"; };
+		2F1FD06C17D0A969008F6408 /* DoubleMovingAverageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleMovingAverageFilter.h; sourceTree = "<group>"; };
+		2F1FD06D17D0A969008F6408 /* HighPassFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HighPassFilter.cpp; sourceTree = "<group>"; };
+		2F1FD06E17D0A969008F6408 /* HighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighPassFilter.h; sourceTree = "<group>"; };
+		2F1FD06F17D0A969008F6408 /* LowPassFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LowPassFilter.cpp; sourceTree = "<group>"; };
+		2F1FD07017D0A969008F6408 /* LowPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LowPassFilter.h; sourceTree = "<group>"; };
+		2F1FD07117D0A969008F6408 /* MovingAverageFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovingAverageFilter.cpp; sourceTree = "<group>"; };
+		2F1FD07217D0A969008F6408 /* MovingAverageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovingAverageFilter.h; sourceTree = "<group>"; };
+		2F1FD07317D0A969008F6408 /* SavitzkyGolayFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SavitzkyGolayFilter.cpp; sourceTree = "<group>"; };
+		2F1FD07417D0A969008F6408 /* SavitzkyGolayFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SavitzkyGolayFilter.h; sourceTree = "<group>"; };
+		2F1FD07817D0A969008F6408 /* MLP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MLP.cpp; sourceTree = "<group>"; };
+		2F1FD07917D0A969008F6408 /* MLP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLP.h; sourceTree = "<group>"; };
+		2F1FD07A17D0A969008F6408 /* Neuron.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Neuron.cpp; sourceTree = "<group>"; };
+		2F1FD07B17D0A969008F6408 /* Neuron.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Neuron.h; sourceTree = "<group>"; };
+		2F1FD07D17D0A969008F6408 /* LogisticRegression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogisticRegression.cpp; sourceTree = "<group>"; };
+		2F1FD07E17D0A969008F6408 /* LogisticRegression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogisticRegression.h; sourceTree = "<group>"; };
+		2F1FD08017D0A969008F6408 /* Cholesky.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cholesky.cpp; sourceTree = "<group>"; };
+		2F1FD08117D0A969008F6408 /* Cholesky.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cholesky.h; sourceTree = "<group>"; };
+		2F1FD08217D0A969008F6408 /* CircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularBuffer.h; sourceTree = "<group>"; };
+		2F1FD08317D0A969008F6408 /* ClassificationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationResult.h; sourceTree = "<group>"; };
+		2F1FD08417D0A969008F6408 /* ClassTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassTracker.h; sourceTree = "<group>"; };
+		2F1FD08517D0A969008F6408 /* DebugLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DebugLog.cpp; sourceTree = "<group>"; };
+		2F1FD08617D0A969008F6408 /* DebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
+		2F1FD08717D0A969008F6408 /* EigenvalueDecomposition.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EigenvalueDecomposition.cpp; sourceTree = "<group>"; };
+		2F1FD08817D0A969008F6408 /* EigenvalueDecomposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EigenvalueDecomposition.h; sourceTree = "<group>"; };
+		2F1FD08917D0A969008F6408 /* ErrorLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorLog.cpp; sourceTree = "<group>"; };
+		2F1FD08A17D0A969008F6408 /* ErrorLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorLog.h; sourceTree = "<group>"; };
+		2F1FD08B17D0A969008F6408 /* FileParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileParser.h; sourceTree = "<group>"; };
+		2F1FD08C17D0A969008F6408 /* GRTCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRTCommon.h; sourceTree = "<group>"; };
+		2F1FD08D17D0A969008F6408 /* GRTVersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRTVersionInfo.h; sourceTree = "<group>"; };
+		2F1FD08E17D0A969008F6408 /* IndexedDouble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexedDouble.h; sourceTree = "<group>"; };
+		2F1FD08F17D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LabelledTimeSeriesClassificationSampleTrimmer.cpp; sourceTree = "<group>"; };
+		2F1FD09017D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelledTimeSeriesClassificationSampleTrimmer.h; sourceTree = "<group>"; };
+		2F1FD09117D0A969008F6408 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		2F1FD09217D0A969008F6408 /* LUdcmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LUdcmp.cpp; sourceTree = "<group>"; };
+		2F1FD09317D0A969008F6408 /* LUdcmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LUdcmp.h; sourceTree = "<group>"; };
+		2F1FD09417D0A969008F6408 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		2F1FD09517D0A969008F6408 /* MatrixDouble.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MatrixDouble.cpp; sourceTree = "<group>"; };
+		2F1FD09617D0A969008F6408 /* MatrixDouble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixDouble.h; sourceTree = "<group>"; };
+		2F1FD09717D0A969008F6408 /* MinMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMax.h; sourceTree = "<group>"; };
+		2F1FD09817D0A969008F6408 /* Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Random.h; sourceTree = "<group>"; };
+		2F1FD09917D0A969008F6408 /* RangeTracker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RangeTracker.cpp; sourceTree = "<group>"; };
+		2F1FD09A17D0A969008F6408 /* RangeTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeTracker.h; sourceTree = "<group>"; };
+		2F1FD09B17D0A969008F6408 /* SVD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SVD.cpp; sourceTree = "<group>"; };
+		2F1FD09C17D0A969008F6408 /* SVD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVD.h; sourceTree = "<group>"; };
+		2F1FD09D17D0A969008F6408 /* TestingLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestingLog.cpp; sourceTree = "<group>"; };
+		2F1FD09E17D0A969008F6408 /* TestingLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingLog.h; sourceTree = "<group>"; };
+		2F1FD09F17D0A969008F6408 /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		2F1FD0A017D0A969008F6408 /* TrainingDataRecordingTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainingDataRecordingTimer.cpp; sourceTree = "<group>"; };
+		2F1FD0A117D0A969008F6408 /* TrainingDataRecordingTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingDataRecordingTimer.h; sourceTree = "<group>"; };
+		2F1FD0A217D0A969008F6408 /* TrainingLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TrainingLog.cpp; sourceTree = "<group>"; };
+		2F1FD0A317D0A969008F6408 /* TrainingLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingLog.h; sourceTree = "<group>"; };
+		2F1FD0A417D0A969008F6408 /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
+		2F1FD0A517D0A969008F6408 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		2F1FD0A617D0A969008F6408 /* WarningLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WarningLog.cpp; sourceTree = "<group>"; };
+		2F1FD0A717D0A969008F6408 /* WarningLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarningLog.h; sourceTree = "<group>"; };
+		2F1FD0F417D0B47F008F6408 /* DTWTestTrainingData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DTWTestTrainingData.txt; sourceTree = "<group>"; };
+		2F30E31317CF6B8200F14438 /* OLKGRTHandDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLKGRTHandDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F30E31617CF6B8200F14438 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2F30E31917CF6B8200F14438 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2F30E31A17CF6B8200F14438 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2F30E31B17CF6B8200F14438 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2F30E31E17CF6B8200F14438 /* OLKGRTHandDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OLKGRTHandDemo-Info.plist"; sourceTree = "<group>"; };
+		2F30E32017CF6B8200F14438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2F30E32217CF6B8200F14438 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2F30E32417CF6B8200F14438 /* OLKGRTHandDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OLKGRTHandDemo-Prefix.pch"; sourceTree = "<group>"; };
+		2F30E32617CF6B8200F14438 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2F30E32817CF6B8200F14438 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2F30E32917CF6B8200F14438 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2F30E32C17CF6B8300F14438 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2F30E33317CF6BB800F14438 /* Sample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		2F30E33417CF6BB800F14438 /* Sample.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Sample.mm; sourceTree = "<group>"; };
+		2F30E33617CF6C6300F14438 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libLeap.dylib; path = ../../../code/libraries/LeapSDK/lib/libLeap.dylib; sourceTree = "<group>"; };
+		2F30E34217CF706000F14438 /* OLKDemoHandsOverlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OLKDemoHandsOverlayViewController.h; sourceTree = "<group>"; };
+		2F30E34317CF706000F14438 /* OLKDemoHandsOverlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLKDemoHandsOverlayViewController.m; sourceTree = "<group>"; };
+		2F30E34A17CF778200F14438 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F30E31017CF6B8200F14438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F0B6E4417D10FFA00B92D13 /* OpenLeapKit.framework in Frameworks */,
+				2F30E31717CF6B8200F14438 /* Cocoa.framework in Frameworks */,
+				2F30E33717CF6C6300F14438 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F0B6E3F17D10FD400B92D13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F0B6E4317D10FD400B92D13 /* OpenLeapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F1FCFE017D0A969008F6408 /* GRT */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFE117D0A969008F6408 /* ClassificationModules */,
+				2F1FD01617D0A969008F6408 /* ClusteringModules */,
+				2F1FD01D17D0A969008F6408 /* ContextModules */,
+				2F1FD02017D0A969008F6408 /* DataStructures */,
+				2F1FD03217D0A969008F6408 /* FeatureExtractionModules */,
+				2F1FD04E17D0A969008F6408 /* GestureRecognitionPipeline */,
+				2F1FD05E17D0A969008F6408 /* GRT.h */,
+				2F1FD05F17D0A969008F6408 /* PostProcessingModules */,
+				2F1FD06617D0A969008F6408 /* PreProcessingModules */,
+				2F1FD07517D0A969008F6408 /* RegressionModules */,
+				2F1FD07F17D0A969008F6408 /* Util */,
+			);
+			path = GRT;
+			sourceTree = "<group>";
+		};
+		2F1FCFE117D0A969008F6408 /* ClassificationModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFE217D0A969008F6408 /* AdaBoost */,
+				2F1FCFED17D0A969008F6408 /* ANBC */,
+				2F1FCFF217D0A969008F6408 /* BAG */,
+				2F1FCFF517D0A969008F6408 /* DTW */,
+				2F1FCFF817D0A969008F6408 /* GMM */,
+				2F1FCFFC17D0A969008F6408 /* HMM */,
+				2F1FD00117D0A969008F6408 /* KNN */,
+				2F1FD00417D0A969008F6408 /* LDA */,
+				2F1FD00717D0A969008F6408 /* LRC */,
+				2F1FD00B17D0A969008F6408 /* MinDist */,
+				2F1FD01017D0A969008F6408 /* SVM */,
+			);
+			path = ClassificationModules;
+			sourceTree = "<group>";
+		};
+		2F1FCFE217D0A969008F6408 /* AdaBoost */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFE317D0A969008F6408 /* AdaBoost.cpp */,
+				2F1FCFE417D0A969008F6408 /* AdaBoost.h */,
+				2F1FCFE517D0A969008F6408 /* AdaBoostClassModel.h */,
+				2F1FCFE617D0A969008F6408 /* WeakClassifiers */,
+			);
+			path = AdaBoost;
+			sourceTree = "<group>";
+		};
+		2F1FCFE617D0A969008F6408 /* WeakClassifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFE717D0A969008F6408 /* DecisionStump.cpp */,
+				2F1FCFE817D0A969008F6408 /* DecisionStump.h */,
+				2F1FCFE917D0A969008F6408 /* RadialBasisFunction.cpp */,
+				2F1FCFEA17D0A969008F6408 /* RadialBasisFunction.h */,
+				2F1FCFEB17D0A969008F6408 /* WeakClassifier.cpp */,
+				2F1FCFEC17D0A969008F6408 /* WeakClassifier.h */,
+			);
+			path = WeakClassifiers;
+			sourceTree = "<group>";
+		};
+		2F1FCFED17D0A969008F6408 /* ANBC */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFEE17D0A969008F6408 /* ANBC.cpp */,
+				2F1FCFEF17D0A969008F6408 /* ANBC.h */,
+				2F1FCFF017D0A969008F6408 /* ANBC_Model.cpp */,
+				2F1FCFF117D0A969008F6408 /* ANBC_Model.h */,
+			);
+			path = ANBC;
+			sourceTree = "<group>";
+		};
+		2F1FCFF217D0A969008F6408 /* BAG */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFF317D0A969008F6408 /* BAG.cpp */,
+				2F1FCFF417D0A969008F6408 /* BAG.h */,
+			);
+			path = BAG;
+			sourceTree = "<group>";
+		};
+		2F1FCFF517D0A969008F6408 /* DTW */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFF617D0A969008F6408 /* DTW.cpp */,
+				2F1FCFF717D0A969008F6408 /* DTW.h */,
+			);
+			path = DTW;
+			sourceTree = "<group>";
+		};
+		2F1FCFF817D0A969008F6408 /* GMM */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFF917D0A969008F6408 /* GMM.cpp */,
+				2F1FCFFA17D0A969008F6408 /* GMM.h */,
+				2F1FCFFB17D0A969008F6408 /* MixtureModel.h */,
+			);
+			path = GMM;
+			sourceTree = "<group>";
+		};
+		2F1FCFFC17D0A969008F6408 /* HMM */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FCFFD17D0A969008F6408 /* HiddenMarkovModel.cpp */,
+				2F1FCFFE17D0A969008F6408 /* HiddenMarkovModel.h */,
+				2F1FCFFF17D0A969008F6408 /* HMM.cpp */,
+				2F1FD00017D0A969008F6408 /* HMM.h */,
+			);
+			path = HMM;
+			sourceTree = "<group>";
+		};
+		2F1FD00117D0A969008F6408 /* KNN */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD00217D0A969008F6408 /* KNN.cpp */,
+				2F1FD00317D0A969008F6408 /* KNN.h */,
+			);
+			path = KNN;
+			sourceTree = "<group>";
+		};
+		2F1FD00417D0A969008F6408 /* LDA */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD00517D0A969008F6408 /* LDA.cpp */,
+				2F1FD00617D0A969008F6408 /* LDA.h */,
+			);
+			path = LDA;
+			sourceTree = "<group>";
+		};
+		2F1FD00717D0A969008F6408 /* LRC */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD00817D0A969008F6408 /* LogisticRegressionModel.h */,
+				2F1FD00917D0A969008F6408 /* LRC.cpp */,
+				2F1FD00A17D0A969008F6408 /* LRC.h */,
+			);
+			path = LRC;
+			sourceTree = "<group>";
+		};
+		2F1FD00B17D0A969008F6408 /* MinDist */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD00C17D0A969008F6408 /* MinDist.cpp */,
+				2F1FD00D17D0A969008F6408 /* MinDist.h */,
+				2F1FD00E17D0A969008F6408 /* MinDistModel.cpp */,
+				2F1FD00F17D0A969008F6408 /* MinDistModel.h */,
+			);
+			path = MinDist;
+			sourceTree = "<group>";
+		};
+		2F1FD01017D0A969008F6408 /* SVM */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01117D0A969008F6408 /* LIBSVM */,
+				2F1FD01417D0A969008F6408 /* SVM.cpp */,
+				2F1FD01517D0A969008F6408 /* SVM.h */,
+			);
+			path = SVM;
+			sourceTree = "<group>";
+		};
+		2F1FD01117D0A969008F6408 /* LIBSVM */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01217D0A969008F6408 /* libsvm.cpp */,
+				2F1FD01317D0A969008F6408 /* libsvm.h */,
+			);
+			path = LIBSVM;
+			sourceTree = "<group>";
+		};
+		2F1FD01617D0A969008F6408 /* ClusteringModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01717D0A969008F6408 /* GaussianMixtureModels */,
+				2F1FD01A17D0A969008F6408 /* KMeans */,
+			);
+			path = ClusteringModules;
+			sourceTree = "<group>";
+		};
+		2F1FD01717D0A969008F6408 /* GaussianMixtureModels */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01817D0A969008F6408 /* GaussianMixtureModels.cpp */,
+				2F1FD01917D0A969008F6408 /* GaussianMixtureModels.h */,
+			);
+			path = GaussianMixtureModels;
+			sourceTree = "<group>";
+		};
+		2F1FD01A17D0A969008F6408 /* KMeans */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01B17D0A969008F6408 /* KMeans.cpp */,
+				2F1FD01C17D0A969008F6408 /* KMeans.h */,
+			);
+			path = KMeans;
+			sourceTree = "<group>";
+		};
+		2F1FD01D17D0A969008F6408 /* ContextModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD01E17D0A969008F6408 /* Gate.cpp */,
+				2F1FD01F17D0A969008F6408 /* Gate.h */,
+			);
+			path = ContextModules;
+			sourceTree = "<group>";
+		};
+		2F1FD02017D0A969008F6408 /* DataStructures */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD02117D0A969008F6408 /* LabelledClassificationData.cpp */,
+				2F1FD02217D0A969008F6408 /* LabelledClassificationData.h */,
+				2F1FD02317D0A969008F6408 /* LabelledClassificationSample.cpp */,
+				2F1FD02417D0A969008F6408 /* LabelledClassificationSample.h */,
+				2F1FD02517D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.cpp */,
+				2F1FD02617D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.h */,
+				2F1FD02717D0A969008F6408 /* LabelledRegressionData.cpp */,
+				2F1FD02817D0A969008F6408 /* LabelledRegressionData.h */,
+				2F1FD02917D0A969008F6408 /* LabelledRegressionSample.cpp */,
+				2F1FD02A17D0A969008F6408 /* LabelledRegressionSample.h */,
+				2F1FD02B17D0A969008F6408 /* LabelledTimeSeriesClassificationData.cpp */,
+				2F1FD02C17D0A969008F6408 /* LabelledTimeSeriesClassificationData.h */,
+				2F1FD02D17D0A969008F6408 /* LabelledTimeSeriesClassificationSample.cpp */,
+				2F1FD02E17D0A969008F6408 /* LabelledTimeSeriesClassificationSample.h */,
+				2F1FD02F17D0A969008F6408 /* TimeSeriesPositionTracker.h */,
+				2F1FD03017D0A969008F6408 /* UnlabelledClassificationData.cpp */,
+				2F1FD03117D0A969008F6408 /* UnlabelledClassificationData.h */,
+			);
+			path = DataStructures;
+			sourceTree = "<group>";
+		};
+		2F1FD03217D0A969008F6408 /* FeatureExtractionModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD03317D0A969008F6408 /* FFT */,
+				2F1FD03A17D0A969008F6408 /* KMeansQuantizer */,
+				2F1FD03D17D0A969008F6408 /* MovementIndex */,
+				2F1FD04017D0A969008F6408 /* MovementTrajectoryFeatures */,
+				2F1FD04317D0A969008F6408 /* PCA */,
+				2F1FD04617D0A969008F6408 /* PeakDetection.cpp */,
+				2F1FD04717D0A969008F6408 /* PeakDetection.h */,
+				2F1FD04817D0A969008F6408 /* TimeDomainFeatures */,
+				2F1FD04B17D0A969008F6408 /* ZeroCrossingCounter */,
+			);
+			path = FeatureExtractionModules;
+			sourceTree = "<group>";
+		};
+		2F1FD03317D0A969008F6408 /* FFT */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD03417D0A969008F6408 /* FastFourierTransform.cpp */,
+				2F1FD03517D0A969008F6408 /* FastFourierTransform.h */,
+				2F1FD03617D0A969008F6408 /* FFT.cpp */,
+				2F1FD03717D0A969008F6408 /* FFT.h */,
+				2F1FD03817D0A969008F6408 /* FFTFeatures.cpp */,
+				2F1FD03917D0A969008F6408 /* FFTFeatures.h */,
+			);
+			path = FFT;
+			sourceTree = "<group>";
+		};
+		2F1FD03A17D0A969008F6408 /* KMeansQuantizer */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD03B17D0A969008F6408 /* KMeansQuantizer.cpp */,
+				2F1FD03C17D0A969008F6408 /* KMeansQuantizer.h */,
+			);
+			path = KMeansQuantizer;
+			sourceTree = "<group>";
+		};
+		2F1FD03D17D0A969008F6408 /* MovementIndex */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD03E17D0A969008F6408 /* MovementIndex.cpp */,
+				2F1FD03F17D0A969008F6408 /* MovementIndex.h */,
+			);
+			path = MovementIndex;
+			sourceTree = "<group>";
+		};
+		2F1FD04017D0A969008F6408 /* MovementTrajectoryFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD04117D0A969008F6408 /* MovementTrajectoryFeatures.cpp */,
+				2F1FD04217D0A969008F6408 /* MovementTrajectoryFeatures.h */,
+			);
+			path = MovementTrajectoryFeatures;
+			sourceTree = "<group>";
+		};
+		2F1FD04317D0A969008F6408 /* PCA */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD04417D0A969008F6408 /* PrincipalComponentAnalysis.cpp */,
+				2F1FD04517D0A969008F6408 /* PrincipalComponentAnalysis.h */,
+			);
+			path = PCA;
+			sourceTree = "<group>";
+		};
+		2F1FD04817D0A969008F6408 /* TimeDomainFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD04917D0A969008F6408 /* TimeDomainFeatures.cpp */,
+				2F1FD04A17D0A969008F6408 /* TimeDomainFeatures.h */,
+			);
+			path = TimeDomainFeatures;
+			sourceTree = "<group>";
+		};
+		2F1FD04B17D0A969008F6408 /* ZeroCrossingCounter */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD04C17D0A969008F6408 /* ZeroCrossingCounter.cpp */,
+				2F1FD04D17D0A969008F6408 /* ZeroCrossingCounter.h */,
+			);
+			path = ZeroCrossingCounter;
+			sourceTree = "<group>";
+		};
+		2F1FD04E17D0A969008F6408 /* GestureRecognitionPipeline */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD04F17D0A969008F6408 /* Classifier.cpp */,
+				2F1FD05017D0A969008F6408 /* Classifier.h */,
+				2F1FD05117D0A969008F6408 /* Context.cpp */,
+				2F1FD05217D0A969008F6408 /* Context.h */,
+				2F1FD05317D0A969008F6408 /* FeatureExtraction.cpp */,
+				2F1FD05417D0A969008F6408 /* FeatureExtraction.h */,
+				2F1FD05517D0A969008F6408 /* GestureRecognitionPipeline.cpp */,
+				2F1FD05617D0A969008F6408 /* GestureRecognitionPipeline.h */,
+				2F1FD05717D0A969008F6408 /* MLBase.h */,
+				2F1FD05817D0A969008F6408 /* PostProcessing.cpp */,
+				2F1FD05917D0A969008F6408 /* PostProcessing.h */,
+				2F1FD05A17D0A969008F6408 /* PreProcessing.cpp */,
+				2F1FD05B17D0A969008F6408 /* PreProcessing.h */,
+				2F1FD05C17D0A969008F6408 /* Regressifier.cpp */,
+				2F1FD05D17D0A969008F6408 /* Regressifier.h */,
+			);
+			path = GestureRecognitionPipeline;
+			sourceTree = "<group>";
+		};
+		2F1FD05F17D0A969008F6408 /* PostProcessingModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD06017D0A969008F6408 /* ClassLabelChangeFilter.cpp */,
+				2F1FD06117D0A969008F6408 /* ClassLabelChangeFilter.h */,
+				2F1FD06217D0A969008F6408 /* ClassLabelFilter.cpp */,
+				2F1FD06317D0A969008F6408 /* ClassLabelFilter.h */,
+				2F1FD06417D0A969008F6408 /* ClassLabelTimeoutFilter.cpp */,
+				2F1FD06517D0A969008F6408 /* ClassLabelTimeoutFilter.h */,
+			);
+			path = PostProcessingModules;
+			sourceTree = "<group>";
+		};
+		2F1FD06617D0A969008F6408 /* PreProcessingModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD06717D0A969008F6408 /* DeadZone.cpp */,
+				2F1FD06817D0A969008F6408 /* DeadZone.h */,
+				2F1FD06917D0A969008F6408 /* Derivative.cpp */,
+				2F1FD06A17D0A969008F6408 /* Derivative.h */,
+				2F1FD06B17D0A969008F6408 /* DoubleMovingAverageFilter.cpp */,
+				2F1FD06C17D0A969008F6408 /* DoubleMovingAverageFilter.h */,
+				2F1FD06D17D0A969008F6408 /* HighPassFilter.cpp */,
+				2F1FD06E17D0A969008F6408 /* HighPassFilter.h */,
+				2F1FD06F17D0A969008F6408 /* LowPassFilter.cpp */,
+				2F1FD07017D0A969008F6408 /* LowPassFilter.h */,
+				2F1FD07117D0A969008F6408 /* MovingAverageFilter.cpp */,
+				2F1FD07217D0A969008F6408 /* MovingAverageFilter.h */,
+				2F1FD07317D0A969008F6408 /* SavitzkyGolayFilter.cpp */,
+				2F1FD07417D0A969008F6408 /* SavitzkyGolayFilter.h */,
+			);
+			path = PreProcessingModules;
+			sourceTree = "<group>";
+		};
+		2F1FD07517D0A969008F6408 /* RegressionModules */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD07617D0A969008F6408 /* ArtificialNeuralNetworks */,
+				2F1FD07C17D0A969008F6408 /* LogisticRegression */,
+			);
+			path = RegressionModules;
+			sourceTree = "<group>";
+		};
+		2F1FD07617D0A969008F6408 /* ArtificialNeuralNetworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD07717D0A969008F6408 /* MLP */,
+			);
+			path = ArtificialNeuralNetworks;
+			sourceTree = "<group>";
+		};
+		2F1FD07717D0A969008F6408 /* MLP */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD07817D0A969008F6408 /* MLP.cpp */,
+				2F1FD07917D0A969008F6408 /* MLP.h */,
+				2F1FD07A17D0A969008F6408 /* Neuron.cpp */,
+				2F1FD07B17D0A969008F6408 /* Neuron.h */,
+			);
+			path = MLP;
+			sourceTree = "<group>";
+		};
+		2F1FD07C17D0A969008F6408 /* LogisticRegression */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD07D17D0A969008F6408 /* LogisticRegression.cpp */,
+				2F1FD07E17D0A969008F6408 /* LogisticRegression.h */,
+			);
+			path = LogisticRegression;
+			sourceTree = "<group>";
+		};
+		2F1FD07F17D0A969008F6408 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD08017D0A969008F6408 /* Cholesky.cpp */,
+				2F1FD08117D0A969008F6408 /* Cholesky.h */,
+				2F1FD08217D0A969008F6408 /* CircularBuffer.h */,
+				2F1FD08317D0A969008F6408 /* ClassificationResult.h */,
+				2F1FD08417D0A969008F6408 /* ClassTracker.h */,
+				2F1FD08517D0A969008F6408 /* DebugLog.cpp */,
+				2F1FD08617D0A969008F6408 /* DebugLog.h */,
+				2F1FD08717D0A969008F6408 /* EigenvalueDecomposition.cpp */,
+				2F1FD08817D0A969008F6408 /* EigenvalueDecomposition.h */,
+				2F1FD08917D0A969008F6408 /* ErrorLog.cpp */,
+				2F1FD08A17D0A969008F6408 /* ErrorLog.h */,
+				2F1FD08B17D0A969008F6408 /* FileParser.h */,
+				2F1FD08C17D0A969008F6408 /* GRTCommon.h */,
+				2F1FD08D17D0A969008F6408 /* GRTVersionInfo.h */,
+				2F1FD08E17D0A969008F6408 /* IndexedDouble.h */,
+				2F1FD08F17D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.cpp */,
+				2F1FD09017D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.h */,
+				2F1FD09117D0A969008F6408 /* Log.h */,
+				2F1FD09217D0A969008F6408 /* LUdcmp.cpp */,
+				2F1FD09317D0A969008F6408 /* LUdcmp.h */,
+				2F1FD09417D0A969008F6408 /* Matrix.h */,
+				2F1FD09517D0A969008F6408 /* MatrixDouble.cpp */,
+				2F1FD09617D0A969008F6408 /* MatrixDouble.h */,
+				2F1FD09717D0A969008F6408 /* MinMax.h */,
+				2F1FD09817D0A969008F6408 /* Random.h */,
+				2F1FD09917D0A969008F6408 /* RangeTracker.cpp */,
+				2F1FD09A17D0A969008F6408 /* RangeTracker.h */,
+				2F1FD09B17D0A969008F6408 /* SVD.cpp */,
+				2F1FD09C17D0A969008F6408 /* SVD.h */,
+				2F1FD09D17D0A969008F6408 /* TestingLog.cpp */,
+				2F1FD09E17D0A969008F6408 /* TestingLog.h */,
+				2F1FD09F17D0A969008F6408 /* Timer.h */,
+				2F1FD0A017D0A969008F6408 /* TrainingDataRecordingTimer.cpp */,
+				2F1FD0A117D0A969008F6408 /* TrainingDataRecordingTimer.h */,
+				2F1FD0A217D0A969008F6408 /* TrainingLog.cpp */,
+				2F1FD0A317D0A969008F6408 /* TrainingLog.h */,
+				2F1FD0A417D0A969008F6408 /* Util.cpp */,
+				2F1FD0A517D0A969008F6408 /* Util.h */,
+				2F1FD0A617D0A969008F6408 /* WarningLog.cpp */,
+				2F1FD0A717D0A969008F6408 /* WarningLog.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		2F30E30A17CF6B8200F14438 = {
+			isa = PBXGroup;
+			children = (
+				2F0B6E3E17D10FD400B92D13 /* OpenLeapKit.xcodeproj */,
+				2F1FCFE017D0A969008F6408 /* GRT */,
+				2F30E31C17CF6B8200F14438 /* OLKGRTHandDemo */,
+				2F30E31517CF6B8200F14438 /* Frameworks */,
+				2F30E31417CF6B8200F14438 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F30E31417CF6B8200F14438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F30E31317CF6B8200F14438 /* OLKGRTHandDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F30E31517CF6B8200F14438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F30E33617CF6C6300F14438 /* libLeap.dylib */,
+				2F30E31617CF6B8200F14438 /* Cocoa.framework */,
+				2F30E31817CF6B8200F14438 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F30E31817CF6B8200F14438 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F30E31917CF6B8200F14438 /* AppKit.framework */,
+				2F30E31A17CF6B8200F14438 /* CoreData.framework */,
+				2F30E31B17CF6B8200F14438 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		2F30E31C17CF6B8200F14438 /* OLKGRTHandDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2F30E32817CF6B8200F14438 /* AppDelegate.h */,
+				2F30E32917CF6B8200F14438 /* AppDelegate.m */,
+				2F30E33317CF6BB800F14438 /* Sample.h */,
+				2F30E33417CF6BB800F14438 /* Sample.mm */,
+				2F30E34217CF706000F14438 /* OLKDemoHandsOverlayViewController.h */,
+				2F30E34317CF706000F14438 /* OLKDemoHandsOverlayViewController.m */,
+				2F30E32B17CF6B8300F14438 /* MainMenu.xib */,
+				2F30E31D17CF6B8200F14438 /* Supporting Files */,
+			);
+			path = OLKGRTHandDemo;
+			sourceTree = "<group>";
+		};
+		2F30E31D17CF6B8200F14438 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F1FD0F417D0B47F008F6408 /* DTWTestTrainingData.txt */,
+				2F30E31E17CF6B8200F14438 /* OLKGRTHandDemo-Info.plist */,
+				2F30E31F17CF6B8200F14438 /* InfoPlist.strings */,
+				2F30E32217CF6B8200F14438 /* main.m */,
+				2F30E32417CF6B8200F14438 /* OLKGRTHandDemo-Prefix.pch */,
+				2F30E32517CF6B8200F14438 /* Credits.rtf */,
+				2F30E34A17CF778200F14438 /* LICENSE */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F30E31217CF6B8200F14438 /* OLKGRTHandDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F30E33017CF6B8300F14438 /* Build configuration list for PBXNativeTarget "OLKGRTHandDemo" */;
+			buildPhases = (
+				2F30E30F17CF6B8200F14438 /* Sources */,
+				2F30E31017CF6B8200F14438 /* Frameworks */,
+				2F30E31117CF6B8200F14438 /* Resources */,
+				2F30E34617CF744700F14438 /* CopyFiles */,
+				2F30E34817CF745800F14438 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OLKGRTHandDemo;
+			productName = OLK2DViewHandDemo;
+			productReference = 2F30E31317CF6B8200F14438 /* OLKGRTHandDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F30E30B17CF6B8200F14438 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Tyler Zetterstrom";
+			};
+			buildConfigurationList = 2F30E30E17CF6B8200F14438 /* Build configuration list for PBXProject "OLKGRTHandDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2F30E30A17CF6B8200F14438;
+			productRefGroup = 2F30E31417CF6B8200F14438 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2F0B6E3F17D10FD400B92D13 /* Products */;
+					ProjectRef = 2F0B6E3E17D10FD400B92D13 /* OpenLeapKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2F30E31217CF6B8200F14438 /* OLKGRTHandDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2F0B6E4317D10FD400B92D13 /* OpenLeapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OpenLeapKit.framework;
+			remoteRef = 2F0B6E4217D10FD400B92D13 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F30E31117CF6B8200F14438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F30E32117CF6B8200F14438 /* InfoPlist.strings in Resources */,
+				2F30E32717CF6B8200F14438 /* Credits.rtf in Resources */,
+				2F30E32D17CF6B8300F14438 /* MainMenu.xib in Resources */,
+				2F30E34B17CF778200F14438 /* LICENSE in Resources */,
+				2F1FD0F517D0B47F008F6408 /* DTWTestTrainingData.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F30E30F17CF6B8200F14438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F30E34517CF708400F14438 /* OLKDemoHandsOverlayViewController.m in Sources */,
+				2F30E32317CF6B8200F14438 /* main.m in Sources */,
+				2F30E32A17CF6B8200F14438 /* AppDelegate.m in Sources */,
+				2F30E33517CF6BB800F14438 /* Sample.mm in Sources */,
+				2F1FD0A817D0A969008F6408 /* AdaBoost.cpp in Sources */,
+				2F1FD0A917D0A969008F6408 /* DecisionStump.cpp in Sources */,
+				2F1FD0AA17D0A969008F6408 /* RadialBasisFunction.cpp in Sources */,
+				2F1FD0AB17D0A969008F6408 /* WeakClassifier.cpp in Sources */,
+				2F1FD0AC17D0A969008F6408 /* ANBC.cpp in Sources */,
+				2F1FD0AD17D0A969008F6408 /* ANBC_Model.cpp in Sources */,
+				2F1FD0AE17D0A969008F6408 /* BAG.cpp in Sources */,
+				2F1FD0AF17D0A969008F6408 /* DTW.cpp in Sources */,
+				2F1FD0B017D0A969008F6408 /* GMM.cpp in Sources */,
+				2F1FD0B117D0A969008F6408 /* HiddenMarkovModel.cpp in Sources */,
+				2F1FD0B217D0A969008F6408 /* HMM.cpp in Sources */,
+				2F1FD0B317D0A969008F6408 /* KNN.cpp in Sources */,
+				2F1FD0B417D0A969008F6408 /* LDA.cpp in Sources */,
+				2F1FD0B517D0A969008F6408 /* LRC.cpp in Sources */,
+				2F1FD0B617D0A969008F6408 /* MinDist.cpp in Sources */,
+				2F1FD0B717D0A969008F6408 /* MinDistModel.cpp in Sources */,
+				2F1FD0B817D0A969008F6408 /* libsvm.cpp in Sources */,
+				2F1FD0B917D0A969008F6408 /* SVM.cpp in Sources */,
+				2F1FD0BA17D0A969008F6408 /* GaussianMixtureModels.cpp in Sources */,
+				2F1FD0BB17D0A969008F6408 /* KMeans.cpp in Sources */,
+				2F1FD0BC17D0A969008F6408 /* Gate.cpp in Sources */,
+				2F1FD0BD17D0A969008F6408 /* LabelledClassificationData.cpp in Sources */,
+				2F1FD0BE17D0A969008F6408 /* LabelledClassificationSample.cpp in Sources */,
+				2F1FD0BF17D0A969008F6408 /* LabelledContinuousTimeSeriesClassificationData.cpp in Sources */,
+				2F1FD0C017D0A969008F6408 /* LabelledRegressionData.cpp in Sources */,
+				2F1FD0C117D0A969008F6408 /* LabelledRegressionSample.cpp in Sources */,
+				2F1FD0C217D0A969008F6408 /* LabelledTimeSeriesClassificationData.cpp in Sources */,
+				2F1FD0C317D0A969008F6408 /* LabelledTimeSeriesClassificationSample.cpp in Sources */,
+				2F1FD0C417D0A969008F6408 /* UnlabelledClassificationData.cpp in Sources */,
+				2F1FD0C517D0A969008F6408 /* FastFourierTransform.cpp in Sources */,
+				2F1FD0C617D0A969008F6408 /* FFT.cpp in Sources */,
+				2F1FD0C717D0A969008F6408 /* FFTFeatures.cpp in Sources */,
+				2F1FD0C817D0A969008F6408 /* KMeansQuantizer.cpp in Sources */,
+				2F1FD0C917D0A969008F6408 /* MovementIndex.cpp in Sources */,
+				2F1FD0CA17D0A969008F6408 /* MovementTrajectoryFeatures.cpp in Sources */,
+				2F1FD0CB17D0A969008F6408 /* PrincipalComponentAnalysis.cpp in Sources */,
+				2F1FD0CC17D0A969008F6408 /* PeakDetection.cpp in Sources */,
+				2F1FD0CD17D0A969008F6408 /* TimeDomainFeatures.cpp in Sources */,
+				2F1FD0CE17D0A969008F6408 /* ZeroCrossingCounter.cpp in Sources */,
+				2F1FD0CF17D0A969008F6408 /* Classifier.cpp in Sources */,
+				2F1FD0D017D0A969008F6408 /* Context.cpp in Sources */,
+				2F1FD0D117D0A969008F6408 /* FeatureExtraction.cpp in Sources */,
+				2F1FD0D217D0A969008F6408 /* GestureRecognitionPipeline.cpp in Sources */,
+				2F1FD0D317D0A969008F6408 /* PostProcessing.cpp in Sources */,
+				2F1FD0D417D0A969008F6408 /* PreProcessing.cpp in Sources */,
+				2F1FD0D517D0A969008F6408 /* Regressifier.cpp in Sources */,
+				2F1FD0D617D0A969008F6408 /* ClassLabelChangeFilter.cpp in Sources */,
+				2F1FD0D717D0A969008F6408 /* ClassLabelFilter.cpp in Sources */,
+				2F1FD0D817D0A969008F6408 /* ClassLabelTimeoutFilter.cpp in Sources */,
+				2F1FD0D917D0A969008F6408 /* DeadZone.cpp in Sources */,
+				2F1FD0DA17D0A969008F6408 /* Derivative.cpp in Sources */,
+				2F1FD0DB17D0A969008F6408 /* DoubleMovingAverageFilter.cpp in Sources */,
+				2F1FD0DC17D0A969008F6408 /* HighPassFilter.cpp in Sources */,
+				2F1FD0DD17D0A969008F6408 /* LowPassFilter.cpp in Sources */,
+				2F1FD0DE17D0A969008F6408 /* MovingAverageFilter.cpp in Sources */,
+				2F1FD0DF17D0A969008F6408 /* SavitzkyGolayFilter.cpp in Sources */,
+				2F1FD0E017D0A969008F6408 /* MLP.cpp in Sources */,
+				2F1FD0E117D0A969008F6408 /* Neuron.cpp in Sources */,
+				2F1FD0E217D0A969008F6408 /* LogisticRegression.cpp in Sources */,
+				2F1FD0E317D0A969008F6408 /* Cholesky.cpp in Sources */,
+				2F1FD0E417D0A969008F6408 /* DebugLog.cpp in Sources */,
+				2F1FD0E517D0A969008F6408 /* EigenvalueDecomposition.cpp in Sources */,
+				2F1FD0E617D0A969008F6408 /* ErrorLog.cpp in Sources */,
+				2F1FD0E717D0A969008F6408 /* LabelledTimeSeriesClassificationSampleTrimmer.cpp in Sources */,
+				2F1FD0E817D0A969008F6408 /* LUdcmp.cpp in Sources */,
+				2F1FD0E917D0A969008F6408 /* MatrixDouble.cpp in Sources */,
+				2F1FD0EA17D0A969008F6408 /* RangeTracker.cpp in Sources */,
+				2F1FD0EB17D0A969008F6408 /* SVD.cpp in Sources */,
+				2F1FD0EC17D0A969008F6408 /* TestingLog.cpp in Sources */,
+				2F1FD0ED17D0A969008F6408 /* TrainingDataRecordingTimer.cpp in Sources */,
+				2F1FD0EE17D0A969008F6408 /* TrainingLog.cpp in Sources */,
+				2F1FD0EF17D0A969008F6408 /* Util.cpp in Sources */,
+				2F1FD0F017D0A969008F6408 /* WarningLog.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F30E31F17CF6B8200F14438 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F30E32017CF6B8200F14438 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2F30E32517CF6B8200F14438 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F30E32617CF6B8200F14438 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		2F30E32B17CF6B8300F14438 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F30E32C17CF6B8300F14438 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F30E32E17CF6B8300F14438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2F30E32F17CF6B8300F14438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2F30E33117CF6B8300F14438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OLKGRTHandDemo/OLKGRTHandDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../code/libraries/LeapSDK/include;
+				INFOPLIST_FILE = "OLKGRTHandDemo/OLKGRTHandDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../../../code/libraries/LeapSDK/lib\"",
+				);
+				PRODUCT_NAME = OLKGRTHandDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2F30E33217CF6B8300F14438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OLKGRTHandDemo/OLKGRTHandDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../code/libraries/LeapSDK/include;
+				INFOPLIST_FILE = "OLKGRTHandDemo/OLKGRTHandDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../../../code/libraries/LeapSDK/lib\"",
+				);
+				PRODUCT_NAME = OLKGRTHandDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F30E30E17CF6B8200F14438 /* Build configuration list for PBXProject "OLKGRTHandDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F30E32E17CF6B8300F14438 /* Debug */,
+				2F30E32F17CF6B8300F14438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F30E33017CF6B8300F14438 /* Build configuration list for PBXNativeTarget "OLKGRTHandDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F30E33117CF6B8300F14438 /* Debug */,
+				2F30E33217CF6B8300F14438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F30E30B17CF6B8200F14438 /* Project object */;
+}
